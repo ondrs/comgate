@@ -1,5 +1,7 @@
 <?php
 
+namespace ondrs\Comgate;
+
 class AgmoPaymentsSimpleProtocol {
 
     private $_paymentsUrl;

@@ -1,5 +1,7 @@
 <?php
 
+namespace ondrs\Comgate;
+
 class AgmoPaymentsSimpleDatabase {
 
     private $_dataFolderName;
