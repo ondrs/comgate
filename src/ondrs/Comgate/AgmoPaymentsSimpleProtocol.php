@@ -106,6 +106,7 @@ class AgmoPaymentsSimpleProtocol {
         curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($c, CURLOPT_HEADER, 0);
         curl_setopt($c, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($c, CURLOPT_SSL_VERIFYPEER, 0);
         $responseBody = curl_exec($c);
         curl_close($c);
         return $responseBody;
