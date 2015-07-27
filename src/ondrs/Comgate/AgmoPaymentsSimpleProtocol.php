@@ -262,7 +262,7 @@ class AgmoPaymentsSimpleProtocol {
         }
 
         if (
-            $params['merchant'] !==  $this->_merchant ||
+            (int)$params['merchant'] !==  (int)$this->_merchant ||
             $params['test']     !== ($this->_test ? 'true' : 'false') ||
             $params['secret']   !==  $this->_secret
         ) {
